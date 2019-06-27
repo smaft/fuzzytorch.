@@ -10,7 +10,7 @@ __author__ = "Jay Morgan"
 import torch
 
 # custom imports
-from functional.utils import _tt 
+from src.functional.utils import _tt 
 
 
 def triangle(x, a, b, c):

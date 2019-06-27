@@ -5,7 +5,7 @@ import unittest
 import torch
 
 # custom imports
-from functional.membership import *
+from src.functional.membership import *
 
 
 class TestMembership(unittest.TestCase):
