@@ -15,7 +15,7 @@ class TestMembership(unittest.TestCase):
 
     def test_triangle(self):
         out = triangle(self.x, 20, 60, 80)
-    
+
     def test_trapezoid(self):
         out = trapezoid(self.x, 10, 20, 60, 95)
 

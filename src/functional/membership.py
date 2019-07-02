@@ -45,18 +45,18 @@ def trapezoid(x, a, b, c, d):
     return torch.max(membership, _tt(0))
 
 
-def gaussian(x, a, b):
+def gaussian(x, mu, sigma):
     """Gaussian Membership Function
 
     :param x: input value
-    :param a: The mean of the Gaussian Distribution
+    :param mu: The mean of the Gaussian Distribution
     :param b: The standard deviation of the Distribution
 
     Usage: gaussian(40, a=50, b=20)
            gaussian(torch.Tensor([[20],[30]]), a=50, b=20)
     """
-    a, b = _tt(a), _tt(b)
-    return torch.exp(-(1/2 * (((x-a)/b)**2)))
+    mu, sigma = _tt(mu), _tt(sigma)
+    return torch.exp(-(1/2 * (((x-mu)/sigma)**2)))
 
 
 def bell(x, a, b, c):

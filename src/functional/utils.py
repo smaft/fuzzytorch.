@@ -17,7 +17,7 @@ def _to_tensor(el):
     if isinstance(el, torch.Tensor):
         return el
     else:
-        return torch.FloatTensor([el])
+        return torch.autograd.Variable(torch.FloatTensor([el]), requires_grad=True)
 
 
 # alias for functions
